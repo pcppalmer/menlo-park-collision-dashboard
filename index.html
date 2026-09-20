@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City of Menlo Park Collision Map (2017-2021)</title>
+  <script src="https://unpkg.com/maplibre-gl@3.1.0/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+ <header style="padding: 10px; text-align: center; background-color: #f4f4f4;">
+    <h1>City of Menlo Park Collision Map (2017-2021)</h1>
+    <p>Explore traffic collisions and safety metrics throughout Menlo Park.</p>
+  </header>
+
+  <div style="display: flex; height: 100vh; margin: 0;">
+    <!-- Map Container -->
+    <div id="map" style="flex: 2; height: 90%;">
+      <!-- Legend -->
+      <div id="custom-legend" style="position: absolute; bottom: 10px; left: 10px; background: white; opacity: 0.9; padding: 10px; border-radius: 5px; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); font-family: Arial, sans-serif; z-index: 1000;">
+        <h3>Legend</h3>
+        <div id="legend-content"></div>
+      </div>
+      <div class="layer-toggle-panel" id="layerTogglePanel">
+        <h3>Toggle Layers</h3>
+        <label><input type="checkbox" data-layer="custom-tiles-layer" checked> Custom Tiles</label>
+        <label><input type="checkbox" data-layer="youth-hin-layer" checked> Youth HIN</label>
+        <label><input type="checkbox" data-layer="collision-heatmap" checked> Collision Heatmap</label>
+        <label><input type="checkbox" data-layer="collision-points" checked> Collision Points</label>
+      </div>
+    </div>
+    <!-- Space for Charts and Graphs -->
+    <div id="charts" style="flex: 1; padding: 20px; background-color: #f9f9f9; overflow-y: auto;">
+      <p>Visualize and filter traffic collisions on the map by selecting data on the charts below. Reset enabled filters with the "Reset Filters" button. </p>
+      <!-- Bar Chart Section -->
+      <div id="barChartContainer">
+        <h3>Accidents Per Year</h3>
+        <canvas id="collisionChart" width="400" height="125"></canvas>
+      </div>
+
+      <!-- Doughnut Charts Section -->
+      <div id="doughnutChartsContainer">
+        <h3>Pedestrian and Bicycle Injuries</h3>
+        <canvas id="pedestrianBicycleChart" width="200" height="200"></canvas>
+        <h3>Injury Types</h3>
+        <canvas id="injuryTypeChart" width="200" height="200"></canvas>
+      </div>
+    </div>
+
+    <script src="data/collisions.js"></script>
+    <script src="data/youth-high-injury-network.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

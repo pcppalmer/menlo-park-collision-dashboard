@@ -1,0 +1,100 @@
+<style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      
+    }
+
+    header {
+      padding: 10px;
+      text-align: center;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      
+    }
+
+    /* Main Content Layout */
+    .main-content {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Map Container */
+    #map {
+      flex: 2;
+      height: 100%;
+    }
+
+    /* Charts and Graphs Section */
+    #charts {
+      flex: 1;
+      padding: 20px;
+      background-color: #f9f9f9;
+      overflow-y: auto;
+      border-left: 1px solid #ccc;
+    }
+
+    /* Header Text Styles */
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      color: #333;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    /* Layer Toggle Panel Styles */
+    .layer-toggle-panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+      opacity: 0.9;
+    }
+
+    .layer-toggle-panel input {
+      margin-right: 5px;
+    }
+
+    .layer-toggle-panel label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .layer-toggle-panel h3 {
+      margin: 2px 0;
+      padding: 0;
+    }
+
+    /* General chart container styles */
+    #charts canvas {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 80%;
+    }
+
+    #doughnutChartsContainer canvas {
+      width: 80%;
+      height: 80%;
+    }
+
+
+    #barChartContainer canvas {
+      width: 100%;
+      height: auto;
+    }
+  </style>
