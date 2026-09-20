@@ -4,6 +4,10 @@ An interactive Web GIS dashboard for exploring traffic collisions, injury severi
 
 Built with **MapLibre GL JS** and **Chart.js**, the application combines interactive web mapping with linked data visualizations that allow users to explore collision patterns by year, transportation mode, and injury severity.
 
+`web-gis`, `maplibre-gl`, `chartjs`, `javascript`, `geospatial`, `data-visualization`, `traffic-safety`, `geojson`
+
+<img width="1506" height="714" alt="image" src="https://github.com/user-attachments/assets/b8b1c6f5-c7f0-4cfa-ae16-fb37577ded46" />
+
 ## Live Demo
 
 **[Launch the Interactive Dashboard](https://pcppalmer.github.io/menlo-park-collision-dashboard/)**
