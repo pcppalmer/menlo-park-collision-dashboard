@@ -2,7 +2,7 @@
 
 An interactive Web GIS dashboard for exploring traffic collisions, injury severity, and roadway safety patterns in Menlo Park, California.
 
-Built with **MapLibre GL JS** and **Chart.js**, the application combines interactive web mapping with linked data visualizations that allow users to explore collision patterns by year, transportation mode, and injury severity.
+Built with **MapLibre GL JS** and **Chart.js**, the application combines open source nteractive web mapping with linked data visualizations that allow users to explore collision patterns by year, transportation mode, and injury severity.
 
 `web-gis`, `maplibre-gl`, `chartjs`, `javascript`, `geospatial`, `data-visualization`, `traffic-safety`, `geojson`
 
